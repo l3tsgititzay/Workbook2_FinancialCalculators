@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortage Calculator</title>
+</head>
+<body>
+    <h1>Mortage Calculator</h1>
+    <p>Principal: <input type="calculate" id="principal"/></p>
+    <p>Interest rate: <input type="calculate" id="Interest Rate"/></p>
+    <p>Loan length: <input type="calculate" id="Loan Length"/></p>
+    <p>Expected monthly payment: <input type="number" id="expectedMonthlyPaymentField" readonly/></p>
+    <p>Total interest paid: <input type="number" id="totalInterestPaid" readonly/></p>
+
+<input type="button" value="calculate" id="calculateButton"  />
+<script>
+    window.onload = calculateMortage;
+
+
+    function calculateMortage
+    const principal = document.getElementById(principal)
+    const interestRate = document.getElementById(interestRate)
+    const loanLength = document.getElementById(loanLength)
+    const expectedMonthlyPayment = document.getElementById(interestRate)
+    const totalInterestPaid = document.getElementById(totalInterestPaid)
+
+    calculateMortageEl.onclick = handleCalculateOnclick;
+
+    function handleCalculateOnclick(){
+            console.log("Add button clicked");
+            const principalInputEl = document.ElementById(principal);
+            const interestRate = document.ElementById(interestRate);
+            const loanLength = document.ElementById(principal);
+</script>
+
+const principal=53000;
+const interest= .07625/ 12;
+const loanLength= 15* 12;
+
+const expectedMonthlyPayment= principal * (interest / (1-(1+interest)**-loanLength));
+// const totalInterestPaid=
+console.log(expectedMonthlyPayment)
+</body>
+</html>
